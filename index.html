@@ -12,39 +12,22 @@
   </head>
   <body>
     <!-- Navbar -->
-    <!-- <header>
+    <header>
       <nav class="navbar">
-        <div class="logo"><a href="#about">Pm.</a></div>
-        <div class="navigation"> -->
-          <!-- Checkbox for toggling menu -->
-          <!-- <ul class="">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Project</a></li>
-            <li><a href="#aboutSection">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header> -->
-      <header>
-        <header>
-      <nav class="navbar">
-        <div class="logo"><a href="#about">Pm.</a></div>
-        <div class="navigation">
-          <!-- Checkbox for toggling menu -->
-          <ul class="">
-            <li><a href="#homeSection">Home</a></li>
-            <li><a href="#projectSection">Project</a></li>
-            <li><a href="#aboutSection">About</a></li>           
-            <li><a href="#contactSection">Contact</a></li>
-          </ul>
-        </div>
+        <div class="logo"><a href="#home">Pm.</a></div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <ul class="navigation">
+          <li><a href="#homeSection">Home</a></li>
+          <li><a href="#projectSection">Projects</a></li>
+          <li><a href="#aboutSection">About</a></li>
+          <li><a href="#contactSection">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <!-- First Section: Home -->
-
-    <section class="home container" id="section reveal">
+    <section class="home container" id="homeSection">
       <div class="movingBoxes box1"></div>
       <div class="movingBoxes box2"></div>
       <div class="row homeContent">
@@ -59,18 +42,11 @@
             designs.
           </p>
           <ul class="socialIcons">
-            <li>
-              <a href=""><img src="./email.png" class="socialM" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./instagram.png" class="socialM" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./linkedin.png" class="socialM" /></a>
-            </li>
+            <li><a href=""><img src="./email.png" class="socialM" /></a></li>
+            <li><a href=""><img src="./instagram.png" class="socialM" /></a></li>
+            <li><a href=""><img src="./linkedin.png" class="socialM" /></a></li>
           </ul>
         </div>
-
         <div class="col col-2">
           <img src="./myPhoto.png" class="photo" alt="My Photo" />
           <div class="img-background"></div>
@@ -79,7 +55,7 @@
     </section>
 
     <!-- Second Section: Projects -->
-    <section class="projects container">
+    <section class="projects container" id="projectSection">
       <div class="projectTitle">
         <h3>My Projects</h3>
         <h1>Designs and Experiments</h1>
@@ -89,18 +65,14 @@
           <h2>Solar System</h2>
           <p>
             Build a solar system using transition, transform, and animation
-            properties to create interactive effects and movements that
-            replicate planetary orbits and rotations, enhancing visual appeal
-            and dynamic functionality.
+            properties to create interactive effects and movements that replicate planetary orbits and rotations, enhancing visual appeal and dynamic functionality.
           </p>
         </div>
         <div class="grid-box">
           <h2>Portfolios</h2>
           <p>
             I created a colorful portfolio incorporating hover effects and
-            precise element alignment throughout the page, ensuring a visually
-            appealing and professional design to showcase my skills and
-            creativity effectively.
+            precise element alignment throughout the page, ensuring a visually appealing and professional design to showcase my skills and creativity effectively.
           </p>
         </div>
         <div class="grid-box">
@@ -114,7 +86,7 @@
         <div class="grid-box">
           <h2>BookMyShow Clone</h2>
           <p>
-            Ipp referenced the BookMyShow application and incorporated my own
+            I referenced the BookMyShow application and incorporated my own
             ideas to create a clone using HTML and CSS. This project helped me
             enhance my skills and explore creative approaches to web
             development.
@@ -138,55 +110,43 @@
             <p class="about-me-p">
               Cumque porro voluptatem officia tenetur illo odit veniam expedita,
               explicabo facere eos corrupti sunt itaque enim voluptatibus iste
-              totam harum qui perspiciatis beatae dolores laboriosam quidem. Ab
-              minima rerum veritatis rem esse repellat cum id tempore maxime
-              quae, provident necessitatibus magni, omnis illo dicta asperiores
-              fuga molestias consequatur exercitationem possimus veniam sequi
-              ullam labore! Nemo, facere! Ratione sit, minus nostrum beatae a
-              quos iure officia explicabo excepturi sunt dolorum totam hic nihil
-              tenetur praesentium aspernatur assumenda, aut deleniti reiciendis.
-              Accusantium quae laborum ex, voluptatibus voluptate nihil? Velit
-              adipisci suscipit, repellendus sed expedita blanditiis. Porro
-              alias mollitia magnam asperiores officia eos! Delectus adipisci
-              excepturi fuga voluptatibus consequuntur culpa quam eligendi ad,
-              autem rerum dicta unde libero at?
+              totam harum qui perspiciatis beatae dolores laboriosam quidem.
             </p>
-            <a href="#contact" class="about-btn">Let's Talk</a>
+            <a href="#contactSection" class="about-btn">Let's Talk</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer with Contact Form -->
-    <footer class="footer">
-        <div class="contact-form">
-          <h2>Contact Us</h2>
-          <form action="#" method="POST">
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Your Message</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <div class="form-group">
-              <button type="submit">Send Message</button>
-            </div>
-          </form>
-        </div>
-        <div class="contact-image">
-          <img src="./contact.png" class="about-photo" alt="contact" />
-        </div>
-      
+    <!-- Footer -->
+    <footer class="footer" id="contactSection">
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+      <div class="contact-image">
+        <img src="./contact.png" class="about-photo" alt="contact" />
+      </div>
     </footer>
   </body>
 </html>
