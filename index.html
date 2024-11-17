@@ -5,28 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
   </head>
+
   <body>
     <!-- Navbar -->
     <header>
       <nav class="navbar">
-        <div class="logo"><a href="#home">Pm.</a></div>
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
-        <ul class="navigation">
-          <li><a href="#homeSection">Home</a></li>
-          <li><a href="#projectSection">Projects</a></li>
-          <li><a href="#aboutSection">About</a></li>
-          <li><a href="#contactSection">Contact</a></li>
-        </ul>
+        <div class="logo"><a href="#aboutSection">Pm.</a></div>
+
+        <div class="navigation">
+          <ul class="">
+            <li><a href="#homeSection">Home</a></li>
+            <li><a href="#projectSection">Project</a></li>
+            <li><a href="#aboutSection">About</a></li>
+            <li><a href="#contactSection">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Checkbox for toggling menu -->
       </nav>
+      <div class="toggler">
+        <i class="fa fa-bars"></i>
+      </div>
     </header>
 
     <!-- First Section: Home -->
+
     <section class="home container" id="homeSection">
       <div class="movingBoxes box1"></div>
       <div class="movingBoxes box2"></div>
@@ -42,11 +50,24 @@
             designs.
           </p>
           <ul class="socialIcons">
-            <li><a href=""><img src="./email.png" class="socialM" /></a></li>
-            <li><a href=""><img src="./instagram.png" class="socialM" /></a></li>
-            <li><a href=""><img src="./linkedin.png" class="socialM" /></a></li>
+            <li>
+              <a href="mailto:pragatimoharana3@gmail.com"
+                ><img src="./email.png" class="socialM"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/iamsipy_/"
+                ><img src="./instagram.png" class="socialM"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/pragati-moharana-4179181a8/"
+                ><img src="./linkedin.png" class="socialM"
+              /></a>
+            </li>
           </ul>
         </div>
+
         <div class="col col-2">
           <img src="./myPhoto.png" class="photo" alt="My Photo" />
           <div class="img-background"></div>
@@ -61,21 +82,25 @@
         <h1>Designs and Experiments</h1>
       </div>
       <div class="grid-container">
-        <div class="grid-box">
+        <div class="grid-box solar">
           <h2>Solar System</h2>
           <p>
             Build a solar system using transition, transform, and animation
-            properties to create interactive effects and movements that replicate planetary orbits and rotations, enhancing visual appeal and dynamic functionality.
+            properties to create interactive effects and movements that
+            replicate planetary orbits and rotations, enhancing visual appeal
+            and dynamic functionality.
           </p>
         </div>
-        <div class="grid-box">
+        <div class="grid-box port">
           <h2>Portfolios</h2>
           <p>
             I created a colorful portfolio incorporating hover effects and
-            precise element alignment throughout the page, ensuring a visually appealing and professional design to showcase my skills and creativity effectively.
+            precise element alignment throughout the page, ensuring a visually
+            appealing and professional design to showcase my skills and
+            creativity effectively.
           </p>
         </div>
-        <div class="grid-box">
+        <div class="grid-box zom">
           <h2>Zomato Clone</h2>
           <p>
             I referenced the Zomato website and built a version myself using
@@ -83,7 +108,7 @@
             properties and improve my web development skills.
           </p>
         </div>
-        <div class="grid-box">
+        <div class="grid-box bms">
           <h2>BookMyShow Clone</h2>
           <p>
             I referenced the BookMyShow application and incorporated my own
@@ -108,45 +133,78 @@
           </div>
           <div class="about-me-text">
             <p class="about-me-p">
-              Cumque porro voluptatem officia tenetur illo odit veniam expedita,
-              explicabo facere eos corrupti sunt itaque enim voluptatibus iste
-              totam harum qui perspiciatis beatae dolores laboriosam quidem.
+              Hi, I'm a passionate and aspiring web developer currently on a
+              journey to master the art of creating beautiful, responsive, and
+              user-friendly websites. I'm eager to learn and grow in the field
+              of web development by experimenting with HTML, CSS, JavaScript,
+              and beyond. I love solving problems, turning ideas into functional
+              designs, and constantly challenging myself to improve. Whether
+              it’s building simple layouts or exploring new tools and
+              frameworks, I’m driven by my curiosity and enthusiasm for
+              technology. When I’m not coding, you’ll find me exploring design
+              trends, watching tutorials, or brainstorming creative ways to
+              bring projects to life. I'm excited to continue developing my
+              skills and contributing to meaningful projects as I grow into a
+              professional web developer.
             </p>
-            <a href="#contactSection" class="about-btn">Let's Talk</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer" id="contactSection">
-      <div class="contact-form">
-        <h2>Contact Us</h2>
-        <form action="#" method="POST">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <div class="form-group">
-            <button type="submit">Send Message</button>
-          </div>
-        </form>
-      </div>
-      <div class="contact-image">
-        <img src="./contact.png" class="about-photo" alt="contact" />
+    <!-- Footer with Contact Form -->
+
+    <footer class="container" id="contactSection">
+      <div class="contact">
+        <div class="circle"></div>
+        <div class="contactCol contact-info">
+          <h3>Contact Me</h3>
+          <h1>Got A Project! Let's Talk</h1>
+          <ul class="socialIcons">
+            <li>
+              <a href="mailto:pragatimoharana3@gmail.com"
+                ><img src="./email.png" class="socialMContact"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/iamsipy_/"
+                ><img src="./instagram.png" class="socialMContact"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/pragati-moharana-4179181a8/"
+                ><img src="./linkedin.png" class="socialMContact"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="contactCol contact-form">
+          <form action="#" method="post">
+            <input
+              type="text"
+              name="fullname"
+              placeholder="Full Name"
+              required
+            />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Type your message..."
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </footer>
+    <script>
+      let togglebtn = document.querySelector(".toggler");
+      let navbar = document.querySelector(".navbar");
+
+      togglebtn.addEventListener("click", () => {
+        navbar.classList.toggle("mobile-nav");
+      });
+    </script>
   </body>
 </html>
